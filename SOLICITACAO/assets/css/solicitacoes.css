@@ -1,0 +1,94 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Título do formulário */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo dos rótulos dos campos */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Estilo dos campos de input e textarea */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+/* Foco nos campos de input e textarea */
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #f1f8ff;
+}
+
+/* Estilo do botão de envio */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo das mensagens de erro ou sucesso */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #4caf50;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.alert.error {
+    background-color: #f44336;
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    border-radius: 20px;
+}
+legend{
+    display: flex;
+    border: 1px solid;
+    padding: 1px 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+.menu{
+    width: 70%;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    height: 50PX;
+}
+.nomes{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: -20px;
+    padding-left: 20px;
+   
+}

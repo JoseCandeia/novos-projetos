@@ -1,0 +1,122 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #333;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Estilo do título principal (h1) */
+h1 {
+    font-size: 36px;
+    color: #007BFF;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Container do formulário */
+form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Título do formulário */
+h2 {
+    font-size: 26px;
+    color: #007BFF;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilo dos labels */
+label {
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+    display: block;
+    margin-top: 12px;
+}
+
+/* Estilo dos campos de input e textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Estilo quando os campos estão em foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Estilo do botão de envio */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover do botão */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para telas pequenas - responsividade */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 25px;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    button {
+        font-size: 14px;
+    }
+}
