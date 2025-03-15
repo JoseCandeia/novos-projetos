@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercadinho | ETA</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="Style/style.css" />
+  </head>
+  <body>
+    <p id="text">
+      <marquee behavior=" scroll" direction="left"
+        >Este mercadinho foi feito para o curso de Desenvolvimento de Sistema da
+        ETE!!!</marquee
+      >
+    </p>
+    <header>
+      <nav>
+        <i class="fa-solid fa-shop"></i>
+        <h1><span id="merc">M</span>ercadinho | <span>ETA</span></h1>
+      </nav>
+      <nav class="navBar">
+        <a class="navBarBttn" href="#">HOME</a>
+        <a class="navBarBttn" href="#">PRODUCT</a>
+        <a class="navBarBttn" class="navBarBttn" href="#">ABOUT</a>
+        <a class="navBarBttn" href="#">CONTACT</a>
+      </nav>
+    </header>
+
+    <section class="Psessao">
+
+        <div class="search-container">
+          <input type="text" class="search-bar" placeholder="Digite sua pesquisa..." />
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button >
+            <div class="seta1" onclick="setaRight()"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="seta2" onclick="setaLeft()"><i class="fa-solid fa-arrow-left"></i></div>
+            </button>
+
+        </div>
+
+        <img class="img" id="img" src="img/promocao1.png" alt="Promoção" />
+       
+        <div class="radio-group">
+            <label><input type="radio" id="radio1" name="opcao" value="1" >  </label>
+            <label><input type="radio" id="radio2" name="opcao" value="2">  </label>
+            <label><input type="radio" id="radio3" name="opcao" value="3">  </label>
+        </div>
+        
+      </section>
+      
+      <section class="Ssessao">
+        <h2>Product</h2>
+
+
+        <!-- inicios dos produtos -->
+        <div class="containerProdutos">
+          <div onclick="invisible()" id="chips" class="produtos">
+              <img src="img/chips-160417_640.png" alt="chips">
+              <p class="p">Chips</p>
+              <p class="p">R$ 4,80</p>
+          </div>
+          <div class="produtos">
+              <img src="img/boloChocolate.jpg" alt="Bolo de Chocolate">
+              <p class="p">Bolo de Chocolate</p>
+              <p class="p">R$ 20,25</p>
+          </div>
+          <div class="produtos">
+              <img src="img/confeitado.jpg" alt="Bolo Confeitado">
+              <p class="p">Bolo Confeitado</p>
+              <p class="p">R$ 30,00</p>
+          </div>
+          <div class="produtos">
+              <img src="img/arroz.png" alt="Arroz">
+              <p class="p">Arroz</p>
+              <p class="p">R$ 8,49</p>
+          </div>
+          <div class="produtos">
+              <img src="img/feijao.png" alt="Feijão">
+              <p class="p">Feijão</p>
+              <p class="p">R$ 9,99</p>
+          </div>
+      </div>
+
+
+
+      <div class="containerProdutos">
+        <div class="produtos">
+            <img src="img/garana.png" alt="chips">
+            <p class="p">Guaraná</p>
+            <p class="p">R$ 4,80</p>
+        </div>
+        <div class="produtos">
+            <img src="img/cream_crakcker.png" alt="Bolo de Chocolate">
+            <p class="p">Bolacha Cream Cracker</p>
+            <p class="p">R$ 7,25</p>
+        </div>
+        <div class="produtos">
+            <img src="img/confeitado2.jpg" alt="Bolo Confeitado">
+            <p class="p">Bolo Confeitado</p>
+            <p class="p">R$ 30,00</p>
+        </div>
+        <div class="produtos">
+            <img src="img/pipoca.png" alt="Arroz">
+            <p class="p">Saco de Pipoca</p>
+            <p class="p">R$ 4,49</p>
+        </div>
+        <div class="produtos">
+            <img src="img/fatias.jpg" alt="Feijão">
+            <p class="p">Fatia de Bolo</p>
+            <p class="p">R$ 5,00</p>
+        </div>
+    </div>
+      
+      <!-- FIM DOS PRODUTOS -->
+
+        <button >click</button>
+      </section>
+
+      <!-- SESSAO INVISIVEL  -->
+
+      <section onclick="sessao()" class="sessaoInvisivel" id="invisivel">
+
+        <div class="ivi">
+          <img src="img/chips-160417_640.png" alt="produtos">
+          <p class="PInvisivel">Chips</p>
+          <p class="PInvisivel" >R$ 4,80</p>
+        </div>
+       
+       <input class="btn-ivi" type="button" value="Comprar">
+
+      </section>
+      
+      <script src="js/funcional.js"></script>
+  </body>
+
+  
+
+</html>
